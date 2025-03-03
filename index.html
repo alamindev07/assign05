@@ -8,11 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
 </head>
-<body class="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-6 bg-gray-100 mt-5">
+<body class="max-w-6xl mx-auto shadow-lg rounded-lg p-6  mt-5">
 
   <!-- Header section -->
   <header>
-    <nav class="flex justify-between items-center mb-6">
+    <nav class="flex justify-between items-center mb-6 shadow-lg rounded-lg p-4">
     <div class="flex gap-2 justify-center items-center">
       <img src="images/logo.png" alt="logo">
       <h1 class="text-3xl text-gray-800">Dev<span class="text-black-600 font-bold">Board</span></h1>
@@ -31,6 +31,139 @@
      
     </nav>
 </header>
+<!-- main section start -->
+ <main class="flex gap-2 ">
+
+  <section class="border w-5/6">
+       <!-- Overview Section -->
+
+  <div class="grid grid-cols-4 gap-4 p-4 mb-6">
+    <div class="bg-gray-100 p-4 rounded-lg flex gap-4 items-center justify-center">
+      <img src="images/checkbox.png" alt="" class=" h-5 w-5 text-2xl">
+       <div>
+        <p class="text-gray-600">Task Assigned</p>
+        <p class="text-2xl font-bold">6</p>
+       </div>
+    </div>
+
+    <!-- 2 number button -->
+    <!-- <div class="col-span-2">
+        <button class="text-2xl  bg-gradient-to-r from-blue-500 to-purple-600 btn text-white p-4 rounded-lg flex gap-10 ">
+          <img  src="images/board.png" alt="">
+          Discover Something <br>New Today!</button>
+    </div> -->
+
+    <button class=" col-span-2 flex bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg gap-6 text-white text-xl p-4 items-center">
+      <img src="images/board.png" alt="">
+      Discover Something <br>New Today!
+    </button>
+
+
+    <div class="bg-gray-100 p-4 rounded-lg  flex gap-4 items-center justify-center">
+      <img src="images/calender.png" alt="">
+        <p class="text-gray-600">Wed ,<br>
+<span>Jul 28 2025</span></p>
+    </div>
+</div>
+
+
+<!-- Task Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Card 1 -->
+  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+      <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Shop Ease</span>
+      <h2 class="font-semibold text-lg mt-2">Fix Mobile Button Issue</h2>
+      <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
+        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+      </p>
+      <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">Deadline <br> <strong>21 March 2025</strong></span>
+          <button class="bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+      </div>
+  </div>
+ <!-- Card 2 -->
+  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+      <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">CloudSync</span>
+      <h2 class="font-semibold text-lg mt-2">Add Dark Mode</h2>
+      <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
+        Store the user's preference in localStorage, update CSS variables  a smooth transition effect.
+      </p>
+      <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">Deadline <br> <strong>25 March 2025</strong></span>
+          <button class="bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+      </div>
+  </div>
+  <!-- Card 3 -->
+  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+      <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">SwiftPay</span>
+      <h2 class="font-semibold text-lg mt-2">Optimize  Home page </h2>
+      <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
+        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
+      </p>
+      <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">Deadline <br> <strong>31 March 2025</strong></span>
+          <button class="bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+      </div>
+  </div>
+  <!-- Card 4 -->
+  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+      <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Add new emoji 🤲</span>
+      <h2 class="font-semibold text-lg mt-2">Optimize  Home page </h2>
+      <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
+        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+      </p>
+      <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">Deadline <br> <strong>21 March 2025</strong></span>
+          <button class="bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+      </div>
+  </div>
+  <!-- Card  5-->
+  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+      <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Google LLC</span>
+      <h2 class="font-semibold text-lg mt-2">Integrate OpenAI API  </h2>
+      <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
+        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+      </p>
+      <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">Deadline <br> <strong>01 April 2025</strong></span>
+          <button class="bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+      </div>
+  </div>
+  <!-- Card  6-->
+  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+      <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Glassdoar</span>
+      <h2 class="font-semibold text-lg mt-2">Improve Job searching   </h2>
+      <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
+        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+      </p>
+      <div class="mt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">Deadline <br> <strong>21 March 2025</strong></span>
+          <button class="bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+      </div>
+  </div>
+
+
+
+  </section>
+
+ <!-- Activity Log section-->
+  <section class="border w-1/6">
+
+    <div class="bg-white  rounded-lg p-6 mb-6  w-full max-w-md mx-auto text-center">
+      <div class="flex items-center justify-center space-x-2">
+          <img src="images/activity.png" alt="">
+          <h2 class="text-lg font-semibold text-gray-700">Activity Log</h2>
+      </div>
+      <button class="mt-4 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Clear History</button>
+  </div>
+    
+  </section>
+
+
+ </main>
+ 
+
+
 
    
 </body>
