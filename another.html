@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-800">Dev<span class="text-blue-600">Board</span></h1>
+            <div class="flex items-center space-x-4">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-lg text-sm">23</span>
+                <input type="checkbox" checked class="form-checkbox h-5 w-5 text-blue-600">
+            </div>
+        </div>
+
+        <!-- Overview Section -->
+        <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <p class="text-gray-600">Task Assigned</p>
+                <p class="text-2xl font-bold">6</p>
+            </div>
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-lg flex items-center justify-center">
+                <p class="text-lg font-semibold">Discover Something New Today!</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg flex items-center justify-center">
+                <p class="text-gray-600">Tue Feb 25 2025</p>
+            </div>
+        </div>
+
+        <!-- Task Cards -->
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow border">
+                <p class="text-sm text-gray-500">Shop Ease</p>
+                <h2 class="text-lg font-bold text-gray-800">Fix Mobile Button Issue</h2>
+                <p class="text-gray-600 text-sm">A card component has a figure, a body...</p>
+                <p class="text-gray-500 text-sm mt-2">Deadline: 21 March 2025</p>
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">Completed</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow border">
+                <p class="text-sm text-gray-500">Soft Pay</p>
+                <h2 class="text-lg font-bold text-gray-800">Add Pay Success Modal</h2>
+                <p class="text-gray-600 text-sm">A card component has a figure, a body...</p>
+                <p class="text-gray-500 text-sm mt-2">Deadline: 25 March 2025</p>
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">Completed</span>
+            </div>`
+             
+            
+            <div class="bg-white p-4 rounded-lg shadow border">
+                <p class="text-sm text-gray-500">Meta</p>
+                <h2 class="text-lg font-bold text-gray-800">Add new reaction 👏</h2>
+                <p class="text-gray-600 text-sm">A card component has a figure, a body...</p>
+                <p class="text-gray-500 text-sm mt-2">Deadline: 31 March 2025</p>
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm">Completed</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
