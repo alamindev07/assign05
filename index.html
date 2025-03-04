@@ -57,8 +57,9 @@
 
     <div class="bg-gray-100 p-4 rounded-lg  flex gap-4 items-center justify-center">
       <img src="images/calender.png" alt="">
-        <p class="text-gray-600">Wed ,<br>
-<span>Jul 28 2025</span></p>
+        <p id="setCurrentDate" class="text-gray-600">
+
+        </p>
     </div>
 </div>
 
@@ -66,91 +67,95 @@
 <!-- Task Cards -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   <!-- Card 1 -->
-  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+  <div class="cart bg-gray-100 shadow-lg rounded-lg p-6 ">
       <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Shop Ease</span>
-      <h2 class="font-semibold text-lg mt-2">Fix Mobile Button Issue</h2>
+      <h2 id="btnHeading1" class="btnheading font-semibold text-lg mt-2">Fix Mobile Button Issue</h2>
       <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
       </p>
       <div class="mt-4 flex justify-between items-center">
           <span class="text-sm text-gray-600">Deadline <br> <strong>21 March 2025</strong></span>
-          <button id="" class="completeBtnOne bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+          <button id="btn1" class="buttonOne disabled disabled:bg-gray-500 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
       </div>
   </div>
  <!-- Card 2 -->
-  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+  <div class="cart bg-gray-100 shadow-lg rounded-lg p-6 ">
       <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">CloudSync</span>
-      <h2 class="font-semibold text-lg mt-2">Add Dark Mode</h2>
+      <h2 id="btnHeading2" class="btnheading font-semibold text-lg mt-2">Add Dark Mode</h2>
       <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
         Store the user's preference in localStorage, update CSS variables  a smooth transition effect.
       </p>
       <div class="mt-4 flex justify-between items-center">
           <span class="text-sm text-gray-600">Deadline <br> <strong>25 March 2025</strong></span>
-          <button class="completeBtnOne  bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+          <button id="btn2" class="buttonOne disabled disabled:bg-gray-500  bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
       </div>
   </div>
   <!-- Card 3 -->
-  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+  <div class="cart bg-gray-100 shadow-lg rounded-lg p-6 ">
       <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">SwiftPay</span>
-      <h2 class="font-semibold text-lg mt-2">Optimize  Home page </h2>
+      <h2 id="btnHeading3" class="btnheading font-semibold text-lg mt-2">Optimize  Home page </h2>
       <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
       </p>
       <div class="mt-4 flex justify-between items-center">
           <span class="text-sm text-gray-600">Deadline <br> <strong>31 March 2025</strong></span>
-          <button class="completeBtnOne bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+          <button id="btn3" class="buttonOne disabled disabled:bg-gray-500 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
       </div>
   </div>
   <!-- Card 4 -->
-  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+  <div class="cart bg-gray-100 shadow-lg rounded-lg p-6 ">
       <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Add new emoji 🤲</span>
-      <h2 class="font-semibold text-lg mt-2">Optimize  Home page </h2>
+      <h2 id="btnHeading4" class="btnheading font-semibold text-lg mt-2">Optimize  Home page </h2>
       <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
       </p>
       <div class="mt-4 flex justify-between items-center">
           <span class="text-sm text-gray-600">Deadline <br> <strong>21 March 2025</strong></span>
-          <button class="completeBtnOne  bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+          <button id="btn4" class="buttonOne disabled disabled:bg-gray-500 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
       </div>
   </div>
   <!-- Card  5-->
-  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+  <div class="cart bg-gray-100 shadow-lg rounded-lg p-6 ">
       <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Google LLC</span>
-      <h2 class="font-semibold text-lg mt-2">Integrate OpenAI API  </h2>
+      <h2 id="btnHeading5" class="btnheading font-semibold text-lg mt-2">Integrate OpenAI API  </h2>
       <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
       </p>
       <div class="mt-4 flex justify-between items-center">
           <span class="text-sm text-gray-600">Deadline <br> <strong>01 April 2025</strong></span>
-          <button class="completeBtnOne bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+          <button id="btn5" class="buttonOne disabled disabled:bg-gray-500 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
       </div>
   </div>
   <!-- Card  6-->
-  <div class="bg-gray-100 shadow-lg rounded-lg p-6 ">
+  <div class="cart bg-gray-100 shadow-lg rounded-lg p-6 ">
       <span class="bg-white text-gray-600 text-sm px-3 py-1 rounded-lg">Glassdoar</span>
-      <h2 class="font-semibold text-lg mt-2">Improve Job searching   </h2>
+      <h2 id="btnHeading6" class="btnheading font-semibold text-lg mt-2">Improve Job searching   </h2>
       <p class="text-gray-500 text-sm mt-2 bg-white rounded-lg p-2">
         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
       </p>
       <div class="mt-4 flex justify-between items-center">
           <span class="text-sm text-gray-600">Deadline <br> <strong>21 March 2025</strong></span>
-          <button class="completeBtnOne bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
+          <button id="btn6" class="buttonOne disabled disabled:bg-gray-500 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Completed</button>
       </div>
   </div>
-
+</div>
 
 
   </section>
 
  <!-- Activity Log section-->
-  <section class="border w-1/6">
+  <section class=" w-1/6">
 
-    <div class="bg-white  rounded-lg p-6 mb-6  w-full max-w-md mx-auto text-center">
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-6  w-full max-w-md mx-auto text-center">
       <div class="flex items-center justify-center space-x-2">
           <img src="images/activity.png" alt="">
           <h2 class="text-lg font-semibold text-gray-700">Activity Log</h2>
       </div>
-      <button class="mt-4 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Clear History</button>
+      <button id="clearHistory" class="mt-4 bg-indigo-600 text-white px-4 py-2 text-sm rounded-lg">Clear History</button>
+  </div>
+  <!-- set the history section -->
+  <div id="setHistory">
+
   </div>
     
   </section>
