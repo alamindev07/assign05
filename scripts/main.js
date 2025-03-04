@@ -9,7 +9,7 @@ const buttons = document.querySelectorAll(".buttonOne");
         buttons.forEach(button =>{
           button.addEventListener("click", function () {
             this.disabled = true;
-            alert("button clicked")
+            alert("Board update successfully")
             let num1 = parseInt(section1.textContent);
             let num2 = parseInt(section2.textContent);
           
@@ -19,7 +19,7 @@ const buttons = document.querySelectorAll(".buttonOne");
               section1.textContent = num1;
         
               if(num1===0){
-                alert("all button clicked");
+                alert("Congrets!You have completed all current task");
               }
           
               if (num2 < 29) {
@@ -82,13 +82,14 @@ buttonss.forEach(button => {
     const p = document.createElement("p");
     p.innerHTML = `
     <div class="new-section">
-    <h2 class="font-bold">${headingValue}</h2>
-    <p>clicked time: ${clickedTime}</p>
+    <h2 >You have completed the </h2>
+    <h2 class="font-bold"> ${headingValue}</h2>
+    <p>at ${clickedTime}</p>
     
   </div>
     `;
     setHistory.appendChild(p);
-    p.classList.add("bg-gray-100", "p-4", "rounded-lg", "mt-2")
+    p.classList.add("bg-gray-100", "p-1", "rounded-lg", "mt-2")
     const newSection = document.querySelector(".new-section");
 newSection.classList.add("bg-gray-100", "p-4", "rounded-lg");
 

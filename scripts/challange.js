@@ -24,6 +24,7 @@ const setCurrentDate = document.getElementById("setCurrentDate");
 function updateTime() {
     const now = new Date();
     convertedDate = now.toLocaleString('en-US', {
+      weekday: 'long',
       day: 'numeric',
       month: 'long', 
       year: 'numeric',
